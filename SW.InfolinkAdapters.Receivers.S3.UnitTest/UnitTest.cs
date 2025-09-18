@@ -19,12 +19,13 @@ namespace SW.InfolinkAdapters.Receivers.S3.UnitTest
                 Runner.MockRun(handler, new ServerlessOptions(), 
                     new Dictionary<string, string>
                     {
-                        {CommonProperties.AccessKeyId, ""},
-                        {CommonProperties.SecretAccessKey, ""},
-                        {CommonProperties.FolderName, "s3receivertest"},
-                        {CommonProperties.TargetPath, ""},
+                        {CommonProperties.AccessKeyId, "R3LNFRKWMAC4OCCRICS5"},
+                        {CommonProperties.SecretAccessKey, "YPyyTdxs+lZMQEtYIDRK9lkIzjJrCKXinE3OfKEfc7k"},
+                        {CommonProperties.FolderName, "s3receivertest/"},
+                        {CommonProperties.TargetPath, "sf9"},
                         {CommonProperties.Url,  "https://fra1.digitaloceanspaces.com"},
-                        {CommonProperties.ContentType, "text/plain"}
+                        {CommonProperties.BatchSize, "50"},
+                        {CommonProperties.ResponseEncoding, "utf8"}
                     });
                 await handler.Initialize();
                 var names = await handler.ListFiles();

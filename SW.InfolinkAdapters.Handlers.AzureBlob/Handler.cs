@@ -33,7 +33,7 @@ namespace SW.InfolinkAdapters.Handlers.AzureBlob
             var blockBlob = client.GetBlobClient(fileName);
             byte[] byteArray = Encoding.UTF8.GetBytes(xchangeFile.Data);
             using MemoryStream stream = new MemoryStream(byteArray);
-            await blockBlob.UploadAsync(stream);
+            await blockBlob.UploadAsync(stream, overwrite: true);
             return new XchangeFile(string.Empty);
         }
 

@@ -353,3 +353,5 @@ MigrationBackup/
 /SW.InfolinkAdapters.Handlers.S3.UnitTests/appsettings.json
 /SW.InfolinkAdapters.Receivers.AzureBlob.UnitTests/appsettings.json
 /SW.InfolinkAdapters.Receivers.Ftp.UnitTests/appSettings.json
+
+.vscode/

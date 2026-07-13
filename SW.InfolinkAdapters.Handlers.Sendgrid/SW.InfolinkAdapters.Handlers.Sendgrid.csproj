@@ -7,7 +7,7 @@
 
     <ItemGroup>
       <PackageReference Include="SendGrid" Version="9.26.0" />
-      <PackageReference Include="SimplyWorks.Serverless.Sdk" Version="5.0.7" />
+      <PackageReference Include="SimplyWorks.Serverless.Sdk" Version="6.0.9" />
     </ItemGroup>
 
     <ItemGroup>

@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
       <PackageReference Include="SimplyWorks.PrimitiveTypes" Version="6.0.5" />
       <PackageReference Include="SimplyWorks.Serverless.Sdk" Version="6.0.28" />
     </ItemGroup>

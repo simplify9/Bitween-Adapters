@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
     <PackageReference Include="SimplyWorks.Serverless.Sdk" Version="5.0.7" />
   </ItemGroup>
 

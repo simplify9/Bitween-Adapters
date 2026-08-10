@@ -6,8 +6,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Rebex.Mail" Version="6.0.8060" />
-      <PackageReference Include="Rebex.Pop3" Version="6.0.8060" />
+      <PackageReference Include="Rebex.Mail" Version="8.0.9709" />
+      <PackageReference Include="Rebex.Pop3" Version="8.0.9709" />
       <PackageReference Include="SimplyWorks.Serverless.Sdk" Version="5.0.5" />
     </ItemGroup>
 

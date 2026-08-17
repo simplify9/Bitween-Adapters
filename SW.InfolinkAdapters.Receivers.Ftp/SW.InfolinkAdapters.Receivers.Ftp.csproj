@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Rebex.Sftp" Version="6.0.8060" />
+    <PackageReference Include="Rebex.Sftp" Version="6.0.9280" />
     <PackageReference Include="Rebex.Ftp" Version="6.0.8060" />
     <PackageReference Include="SimplyWorks.Serverless.Sdk" Version="6.0.26" />
   </ItemGroup>

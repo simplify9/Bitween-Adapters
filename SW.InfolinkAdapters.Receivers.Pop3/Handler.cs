@@ -16,10 +16,10 @@ namespace SW.InfolinkAdapters.Receivers.Pop3
         private Rebex.Net.Pop3 _pop3;
         public Handler()
         {
-            Runner.Expect(CommonProperties.LicenseKey);
+            Runner.Expect(CommonProperties.LicenseKey, false, true);
             Runner.Expect(CommonProperties.Host);
             Runner.Expect(CommonProperties.Username);
-            Runner.Expect(CommonProperties.Password);
+            Runner.Expect(CommonProperties.Password, false, true);
             Runner.Expect(CommonProperties.BatchSize, "50");
             Runner.Expect(CommonProperties.ResponseEncoding, "utf8");
         }

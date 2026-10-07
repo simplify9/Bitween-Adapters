@@ -16,7 +16,7 @@ public class Handler : IInfolinkReceiver
     {
         Runner.Expect(CommonProperties.Url);
         Runner.Expect(CommonProperties.Username);
-        Runner.Expect(CommonProperties.Password);
+        Runner.Expect(CommonProperties.Password, false, true);
         Runner.Expect("IndexName");
         Runner.Expect("Query");
         

@@ -11,7 +11,7 @@ public class Handler : IInfolinkHandler
         Runner.Expect(CommonProperties.Port);
         Runner.Expect(CommonProperties.Host);
         Runner.Expect(CommonProperties.From);
-        Runner.Expect(CommonProperties.Password, null);
+        Runner.Expect(CommonProperties.Password, null, true);
         Runner.Expect(CommonProperties.To, null);
         Runner.Expect("OtherTo", null);
         Runner.Expect("Cc", null);

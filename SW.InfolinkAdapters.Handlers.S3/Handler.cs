@@ -11,7 +11,7 @@ namespace SW.InfolinkAdapters.Handlers.S3
         public Handler()
         {
             Runner.Expect(CommonProperties.AccessKeyId);
-            Runner.Expect(CommonProperties.SecretAccessKey);
+            Runner.Expect(CommonProperties.SecretAccessKey, false, true);
             Runner.Expect(CommonProperties.Url);
             Runner.Expect(CommonProperties.TargetPath);
             Runner.Expect(CommonProperties.FolderName);

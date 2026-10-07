@@ -33,17 +33,17 @@ namespace SW.InfolinkAdapters.Handlers.Http
         public Handler()
         {
             Runner.Expect("AuthType", null);
-            Runner.Expect("ApiKey", null);
+            Runner.Expect("ApiKey", null, true);
             Runner.Expect("LoginUrl", null);
             Runner.Expect("Username", null);
-            Runner.Expect("Password", null);
+            Runner.Expect("Password", null, true);
             Runner.Expect("Url");
             Runner.Expect("Headers", null);
             Runner.Expect("ContentType", "application/json");
             Runner.Expect("Verb", "post");
             Runner.Expect("DefaultRequest", null);
             Runner.Expect(CommonProperties.ClientId, null);
-            Runner.Expect(CommonProperties.ClientSecret, null);
+            Runner.Expect(CommonProperties.ClientSecret, null, true);
         }
 
         public async Task<XchangeFile> Handle(XchangeFile xchangeFile)

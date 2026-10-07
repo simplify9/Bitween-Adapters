@@ -17,11 +17,11 @@ namespace SW.InfolinkAdapters.Receivers.Ftp
 
         public Handler()
         {
-            Runner.Expect(CommonProperties.LicenseKey);
+            Runner.Expect(CommonProperties.LicenseKey, false, true);
             Runner.Expect(CommonProperties.Host);
             Runner.Expect(CommonProperties.Port, null);
             Runner.Expect(CommonProperties.Username);
-            Runner.Expect(CommonProperties.Password);
+            Runner.Expect(CommonProperties.Password, false, true);
             Runner.Expect(CommonProperties.TargetPath, null);
             Runner.Expect(CommonProperties.BatchSize, "50");
             Runner.Expect(CommonProperties.ResponseEncoding, "utf8");

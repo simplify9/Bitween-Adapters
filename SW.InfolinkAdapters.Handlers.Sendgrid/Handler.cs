@@ -15,7 +15,7 @@ namespace SW.InfolinkAdapters.Handlers.Sendgrid
     {
         public Handler()
         {
-            Runner.Expect(CommonProperties.ApiKey);
+            Runner.Expect(CommonProperties.ApiKey, false, true);
             Runner.Expect(CommonProperties.InputModel,"EmailRequest");
             Runner.Expect(CommonProperties.From,null);
             Runner.Expect(CommonProperties.To,null);

@@ -17,14 +17,14 @@ namespace SW.InfolinkAdapters.Receivers.Http
     public Handler()
     {
       Runner.Expect(CommonProperties.AuthType,  null);
-      Runner.Expect(CommonProperties.ApiKey,  null);
+      Runner.Expect(CommonProperties.ApiKey, null, true);
       Runner.Expect(CommonProperties.LoginUrl,  null);
       Runner.Expect(CommonProperties.Username,  null);
-      Runner.Expect(CommonProperties.Password,  null);
+      Runner.Expect(CommonProperties.Password, null, true);
       Runner.Expect(CommonProperties.Url);
       Runner.Expect(CommonProperties.Headers,  null);
       Runner.Expect(CommonProperties.ClientId,  null);
-      Runner.Expect(CommonProperties.ClientSecret,  null);
+      Runner.Expect(CommonProperties.ClientSecret, null, true);
       Runner.Expect(CommonProperties.ContentType, "application/json");
       Runner.Expect(CommonProperties.Verb, "get");
       Runner.Expect("DefaultRequest", null);

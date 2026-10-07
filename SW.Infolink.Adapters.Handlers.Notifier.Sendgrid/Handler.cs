@@ -16,7 +16,7 @@ namespace SW.Infolink.Adapters.Handlers.Notifier.Sendgrid
     {
         public Handler()
         {
-            Runner.Expect(CommonProperties.ApiKey);
+            Runner.Expect(CommonProperties.ApiKey, false, true);
             Runner.Expect(CommonProperties.From);
             Runner.Expect(CommonProperties.To);
             Runner.Expect(CommonProperties.Subject);

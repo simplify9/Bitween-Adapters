@@ -15,7 +15,7 @@ namespace SW.InfolinkAdapters.Receivers.AzureBlob
         BlobContainerClient container;
         public Handler()
         {
-            Runner.Expect(CommonProperties.ConnectionString);
+            Runner.Expect(CommonProperties.ConnectionString, false, true);
             Runner.Expect(CommonProperties.TargetPath);
         }
 
